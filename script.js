@@ -40,6 +40,12 @@ document.getElementById('kbd').addEventListener('click', (event) => {
 });
 
 document.addEventListener('keyup', (event) => {
+  if (event.key == 'Escape') {
+    removeScreen('second');
+    showScreen('third');
+    showScoreFinal();
+  }
+  x;
   if (
     event.key.toUpperCase() === document.getElementById('text-alp').innerText
   ) {
